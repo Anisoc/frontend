@@ -1,5 +1,6 @@
 <script>
-  import { Button } from "attractions";
+  import { Router } from "@roxi/routify";
+  import { routes } from "@routes";
 </script>
 
-<Button>click me</Button>
+<Router {routes} />
