@@ -103,25 +103,46 @@
     background-color: var(--side-bar);
     border-left: 1px ridge var(--border);
     z-index: 3;
+    display: flex;
+    justify-content: flex-start;
   }
   .container {
     margin: 2vw 0.7vw;
     margin-top: 8.18vh;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     .box {
       position: fixed;
       top: 0vh;
       left: 0px;
-      width: 250px;
-      height: 100vh;
-      background-color: var(--side-bar);
+      height: 10vh;
+      width: 100vw;
+      background-color: transparent;
       border-left: 1px ridge var(--border);
       z-index: 5;
+      display: flex;
+      justify-content: center;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      margin-left: 0.5em;
+    }
+
+    .tabs > div {
+      margin: 0 6px;
     }
 
     .container {
-      margin: 2vw 0.7vw;
+      margin: 3vh 0.7vw;
+      /* width: calc(70px + 10vw); */
+    }
+
+    .content {
+      display: flex;
+      width: calc(60px + 7vw);
     }
   }
 </style>

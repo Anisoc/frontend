@@ -44,4 +44,9 @@
     margin-right: 1vw;
     float: right;
   }
+  @media (min-width: 1000px) {
+    .container {
+      display: none;
+    }
+  }
 </style>
