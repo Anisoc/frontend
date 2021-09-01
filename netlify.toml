@@ -1,8 +1,3 @@
-[build]
-  publish = "dist"
-  functions = "api/netlify"
-  command = "npm run build && cd api/netlify && npm run build"
-
 [[redirects]]
   # SSR and SPA
   from = "/*"
