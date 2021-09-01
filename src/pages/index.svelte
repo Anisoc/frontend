@@ -6,13 +6,21 @@
     FeatherIcon as ContactUs,
   } from "svelte-feather-icons";
 
-  import { Button } from "attractions";
+  import { Button, Card, Headline, Subhead } from "attractions";
 
   let size = "28";
 </script>
 
 <div class="content">
-  <p>aaaaaaaaaa</p>
+  <Card outline>
+    <Headline>Animate & Animation Society</Headline>
+    <Subhead>The University of Edinburgh</Subhead>
+    <p>
+      Dedicated to sharing Japanese animation – anime – with students of the
+      university, we provide weekly showings suitable for both complete
+      newcomers as well as veterans of the hobby.
+    </p>
+  </Card>
 </div>
 <div class="social">
   <div>
@@ -33,10 +41,22 @@
 </div>
 
 <style>
-  .social {
+  .content {
     display: flex;
+    justify-content: center;
+    width: calc(200px + 35vw);
+  }
+  .social {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
   }
   .social > div {
     margin: 6px;
+  }
+
+  .content > div {
+    display: flex;
+    justify-content: center;
   }
 </style>
