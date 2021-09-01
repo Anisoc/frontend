@@ -106,8 +106,8 @@
 
   .butbac {
     background: var(--main);
-    border: 1vw solid var(--main);
-    border-radius: 30px;
+    border: calc(10px + 1vw) solid var(--main);
+    border-radius: 300vw;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14), 0 1px 5px rgba(0, 0, 0, 0.12);
   }
 
