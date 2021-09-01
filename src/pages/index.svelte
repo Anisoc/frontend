@@ -78,7 +78,7 @@
   }
   .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: calc(200px + 35vw);
   }
