@@ -26,7 +26,7 @@
   }
 
   /* Desktops */
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1200px) {
     .mobile {
       display: none;
     }
@@ -37,7 +37,7 @@
   }
 
   /* Mobile screens */
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     .mobile {
       display: initial;
     }
