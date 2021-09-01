@@ -14,7 +14,7 @@
 
 <div class="bar">
   <label for="logo" on:click={() => $goto("/")}>
-    <img src="/public/assets/logo2.png" alt="Logo" /></label
+    <img src="assets/logo2.png" alt="Logo" /></label
   >
   <div class="container">
     <Button round neutral on:click={() => toggleBar()}><Menu {size} /></Button>

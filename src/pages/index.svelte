@@ -77,7 +77,7 @@
   </div>
   <div>
     <Button filled href="https://discord.gg/DjZ5rHXzbH">
-      <img alt="discord" src="/public/assets/discord.png" width={size} />
+      <img alt="discord" src="assets/discord.png" width={size} />
     </Button>
   </div>
 </div>
