@@ -50,18 +50,6 @@
       Social gatherings
     </Card>
   </div>
-  <div>
-    <Card>
-      <div class="but">
-        <div class="butbac">
-          <div>
-            <Karaoke size={cardSize} />
-          </div>
-        </div>
-      </div>
-      Karaoke!
-    </Card>
-  </div>
 </div>
 
 <div class="social">
