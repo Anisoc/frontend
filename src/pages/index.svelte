@@ -2,13 +2,15 @@
   import {
     FacebookIcon as Fb,
     TwitterIcon as Twitter,
-    UserIcon as AboutUs,
-    FeatherIcon as ContactUs,
+    TvIcon as Events,
+    UsersIcon as Meetup,
+    MicIcon as Karaoke,
   } from "svelte-feather-icons";
 
   import { Button, Card, Headline, Subhead } from "attractions";
 
   let size = "28";
+  let cardSize = "40";
 </script>
 
 <div class="content">
@@ -22,9 +24,49 @@
     </p>
   </Card>
 </div>
+
+<div class="cards">
+  <div>
+    <Card>
+      <div class="but">
+        <div class="butbac">
+          <div>
+            <Events size={cardSize} />
+          </div>
+        </div>
+      </div>
+      Weekly anime screenings
+    </Card>
+  </div>
+  <div>
+    <Card>
+      <div class="but">
+        <div class="butbac">
+          <div>
+            <Meetup size={cardSize} />
+          </div>
+        </div>
+      </div>
+      Social gatherings
+    </Card>
+  </div>
+  <div>
+    <Card>
+      <div class="but">
+        <div class="butbac">
+          <div>
+            <Karaoke size={cardSize} />
+          </div>
+        </div>
+      </div>
+      Karaoke!
+    </Card>
+  </div>
+</div>
+
 <div class="social">
   <div>
-    <Button filled>
+    <Button filled href="https://www.facebook.com/groups/299013009165/">
       <Fb {size} />
     </Button>
   </div>
@@ -34,7 +76,7 @@
     </Button>
   </div>
   <div>
-    <Button filled>
+    <Button filled href="https://discord.gg/DjZ5rHXzbH">
       <img alt="discord" src="/assets/discord.png" width={size} />
     </Button>
   </div>
@@ -46,6 +88,11 @@
     justify-content: center;
     width: calc(200px + 35vw);
   }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    width: calc(200px + 35vw);
+  }
   .social {
     margin-top: 3vh;
     display: flex;
@@ -53,10 +100,30 @@
   }
   .social > div {
     margin: 6px;
+    margin-top: 0;
   }
 
-  .content > div {
+  .cards > div {
     display: flex;
     justify-content: center;
+    margin-top: 0;
+    margin: 6px;
+  }
+  .but {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+
+  .butbac {
+    background: var(--main);
+    border: 1vw solid var(--main);
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14), 0 1px 5px rgba(0, 0, 0, 0.12);
+  }
+
+  .butbac > div {
+    filter: invert(93%) sepia(0%) saturate(7500%) hue-rotate(70deg)
+      brightness(107%) contrast(110%);
   }
 </style>
