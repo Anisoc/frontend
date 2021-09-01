@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.3
- * File generated Wed Sep 01 2021 01:55:08 GMT+0100 (British Summer Time)
+ * File generated Wed Sep 01 2021 02:05:47 GMT+0100 (British Summer Time)
  */
 
 export const __version = "2.18.3"
-export const __timestamp = "2021-09-01T00:55:08.018Z"
+export const __timestamp = "2021-09-01T01:05:47.332Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -48,6 +48,31 @@ export const _tree = {
       "path": "/_fallback",
       "id": "__fallback",
       "component": () => import('../src/pages/_fallback.svelte').then(m => m.default)
+    },
+    {
+      "isFile": true,
+      "isDir": false,
+      "file": "about-us.svelte",
+      "filepath": "/about-us.svelte",
+      "name": "about-us",
+      "ext": "svelte",
+      "badExt": false,
+      "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/about-us.svelte",
+      "importPath": "../src/pages/about-us.svelte",
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": false,
+      "isPage": true,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/about-us",
+      "id": "_aboutUs",
+      "component": () => import('../src/pages/about-us.svelte').then(m => m.default)
     },
     {
       "isFile": false,
@@ -122,129 +147,6 @@ export const _tree = {
         "prerender": true
       },
       "path": "/auth"
-    },
-    {
-      "isFile": false,
-      "isDir": true,
-      "file": "booking",
-      "filepath": "/booking",
-      "name": "booking",
-      "ext": "",
-      "badExt": false,
-      "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/booking",
-      "children": [
-        {
-          "isFile": true,
-          "isDir": false,
-          "file": "book.svelte",
-          "filepath": "/booking/book.svelte",
-          "name": "book",
-          "ext": "svelte",
-          "badExt": false,
-          "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/booking/book.svelte",
-          "importPath": "../src/pages/booking/book.svelte",
-          "isLayout": false,
-          "isReset": false,
-          "isIndex": false,
-          "isFallback": false,
-          "isPage": true,
-          "ownMeta": {},
-          "meta": {
-            "recursive": true,
-            "preload": false,
-            "prerender": true
-          },
-          "path": "/booking/book",
-          "id": "_booking_book",
-          "component": () => import('../src/pages/booking/book.svelte').then(m => m.default)
-        }
-      ],
-      "isLayout": false,
-      "isReset": false,
-      "isIndex": false,
-      "isFallback": false,
-      "isPage": false,
-      "ownMeta": {},
-      "meta": {
-        "recursive": true,
-        "preload": false,
-        "prerender": true
-      },
-      "path": "/booking"
-    },
-    {
-      "isFile": false,
-      "isDir": true,
-      "file": "check",
-      "filepath": "/check",
-      "name": "check",
-      "ext": "",
-      "badExt": false,
-      "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/check",
-      "children": [
-        {
-          "isFile": true,
-          "isDir": false,
-          "file": "sheet.svelte",
-          "filepath": "/check/sheet.svelte",
-          "name": "sheet",
-          "ext": "svelte",
-          "badExt": false,
-          "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/check/sheet.svelte",
-          "importPath": "../src/pages/check/sheet.svelte",
-          "isLayout": false,
-          "isReset": false,
-          "isIndex": false,
-          "isFallback": false,
-          "isPage": true,
-          "ownMeta": {},
-          "meta": {
-            "recursive": true,
-            "preload": false,
-            "prerender": true
-          },
-          "path": "/check/sheet",
-          "id": "_check_sheet",
-          "component": () => import('../src/pages/check/sheet.svelte').then(m => m.default)
-        },
-        {
-          "isFile": true,
-          "isDir": false,
-          "file": "trip.svelte",
-          "filepath": "/check/trip.svelte",
-          "name": "trip",
-          "ext": "svelte",
-          "badExt": false,
-          "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/check/trip.svelte",
-          "importPath": "../src/pages/check/trip.svelte",
-          "isLayout": false,
-          "isReset": false,
-          "isIndex": false,
-          "isFallback": false,
-          "isPage": true,
-          "ownMeta": {},
-          "meta": {
-            "recursive": true,
-            "preload": false,
-            "prerender": true
-          },
-          "path": "/check/trip",
-          "id": "_check_trip",
-          "component": () => import('../src/pages/check/trip.svelte').then(m => m.default)
-        }
-      ],
-      "isLayout": false,
-      "isReset": false,
-      "isIndex": false,
-      "isFallback": false,
-      "isPage": false,
-      "ownMeta": {},
-      "meta": {
-        "recursive": true,
-        "preload": false,
-        "prerender": true
-      },
-      "path": "/check"
     },
     {
       "isFile": true,
