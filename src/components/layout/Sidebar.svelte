@@ -108,7 +108,7 @@
   }
   .container {
     margin: 2vw 0.7vw;
-    margin-top: 8.18vh;
+    margin-top: calc(20px + 6.18vh);
   }
   @media (min-width: 1000px) {
     .box {
