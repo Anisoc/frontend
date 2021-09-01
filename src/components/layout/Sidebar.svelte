@@ -66,7 +66,7 @@
         >
           <div class="content">
             <ContactUs {size} />
-            <div class="text">Contacts us</div>
+            <div class="text">Contact us</div>
           </div>
         </Tab>
       </div>
