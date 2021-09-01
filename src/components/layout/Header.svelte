@@ -38,8 +38,7 @@
   }
 
   img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 12vw;
     margin-top: 0.5vh;
     margin-right: 1vw;
     float: right;

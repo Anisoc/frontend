@@ -18,6 +18,11 @@
     margin-top: 5vh;
 }
 
+.x-grid {
+    display: grid;
+    justify-content: center;
+}
+
 .center-flex {
     display        : flex;
     justify-content: center;

@@ -16,7 +16,7 @@
     <Sidebar />
   {/if}
 </div>
-<div class="page x-flex" on:click={hideSideBar}>
+<div class="page x-grid" on:click={hideSideBar}>
   <slot />
 </div>
 
