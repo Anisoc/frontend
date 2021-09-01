@@ -96,7 +96,7 @@
 
   .box {
     position: fixed;
-    top: 8.18vh;
+    top: 0vh;
     left: 0px;
     width: 250px;
     height: 100vh;
@@ -106,8 +106,9 @@
   }
   .container {
     margin: 2vw 0.7vw;
+    margin-top: 8.18vh;
   }
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     .box {
       position: fixed;
       top: 0vh;
@@ -116,7 +117,11 @@
       height: 100vh;
       background-color: var(--side-bar);
       border-left: 1px ridge var(--border);
-      z-index: 3;
+      z-index: 5;
+    }
+
+    .container {
+      margin: 2vw 0.7vw;
     }
   }
 </style>
