@@ -127,6 +127,7 @@
       display: flex;
       flex-wrap: nowrap;
       justify-content: flex-start;
+      flex-direction: row-reverse;
       margin-left: 0.5em;
     }
 
