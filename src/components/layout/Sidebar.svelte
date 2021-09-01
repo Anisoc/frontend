@@ -119,7 +119,6 @@
       width: 100vw;
       background-color: transparent;
       border-left: 1px ridge var(--border);
-      z-index: 5;
       display: flex;
       justify-content: center;
     }
