@@ -2,10 +2,10 @@
   import Header from "../components/layout/Header.svelte";
   import Sidebar from "../components/layout/Sidebar.svelte";
 
-  import { sideBar } from "@stores";
+  import { sideBar } from "../logic/stores";
 
   const hideSideBar = async () => {
-    sideBar.update((val) => false);
+    sideBar.update((val) => 0);
   };
 </script>
 

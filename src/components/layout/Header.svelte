@@ -3,10 +3,10 @@
   import { Button } from "attractions";
   import { MenuIcon as Menu } from "svelte-feather-icons";
 
-  import { sideBar } from "@stores";
+  import { sideBar } from "../../logic/stores";
 
   const toggleBar = () => {
-    sideBar.update((val) => !val);
+    sideBar.update((val) => (val ? 0 : 1));
   };
 
   let size = "45";

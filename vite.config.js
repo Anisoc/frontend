@@ -12,8 +12,9 @@ export default defineConfig(({ command, mode }) => {
     },
     resolve: {
       alias: {
-        "@routes": path.resolve(process.cwd(), "/.routify/routes"),
-        "@stores": path.resolve(process.cwd(), "/src/logic/stores"),
+        "@routes": path.resolve("/.routify/routes.js"),
+        "@stores": path.resolve("/src/logic/stores.js"),
+        "@logic/*": path.resolve("/src/logic/*"),
       },
     },
   };
