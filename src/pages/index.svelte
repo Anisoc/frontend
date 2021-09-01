@@ -15,7 +15,7 @@
 
 <div class="content">
   <Card outline>
-    <Headline>Animate & Animation Society</Headline>
+    <Headline>Anime & Animation Society</Headline>
     <Subhead>The University of Edinburgh</Subhead>
     <p>
       Dedicated to sharing Japanese animation – anime – with students of the
