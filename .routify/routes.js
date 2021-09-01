@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.3
- * File generated Wed Sep 01 2021 00:31:40 GMT+0100 (British Summer Time)
+ * File generated Wed Sep 01 2021 01:55:08 GMT+0100 (British Summer Time)
  */
 
 export const __version = "2.18.3"
-export const __timestamp = "2021-08-31T23:31:40.752Z"
+export const __timestamp = "2021-09-01T00:55:08.018Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -18,12 +18,234 @@ export const options = {}
 
 //tree
 export const _tree = {
-  "name": "root",
-  "filepath": "/",
+  "name": "_layout",
+  "filepath": "/_layout.svelte",
   "root": true,
   "ownMeta": {},
-  "absolutePath": "src/pages",
+  "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/_layout.svelte",
   "children": [
+    {
+      "isFile": true,
+      "isDir": false,
+      "file": "_fallback.svelte",
+      "filepath": "/_fallback.svelte",
+      "name": "_fallback",
+      "ext": "svelte",
+      "badExt": false,
+      "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/_fallback.svelte",
+      "importPath": "../src/pages/_fallback.svelte",
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": true,
+      "isPage": false,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/_fallback",
+      "id": "__fallback",
+      "component": () => import('../src/pages/_fallback.svelte').then(m => m.default)
+    },
+    {
+      "isFile": false,
+      "isDir": true,
+      "file": "auth",
+      "filepath": "/auth",
+      "name": "auth",
+      "ext": "",
+      "badExt": false,
+      "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/auth",
+      "children": [
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "login.svelte",
+          "filepath": "/auth/login.svelte",
+          "name": "login",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/auth/login.svelte",
+          "importPath": "../src/pages/auth/login.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/auth/login",
+          "id": "_auth_login",
+          "component": () => import('../src/pages/auth/login.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "register.svelte",
+          "filepath": "/auth/register.svelte",
+          "name": "register",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/auth/register.svelte",
+          "importPath": "../src/pages/auth/register.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/auth/register",
+          "id": "_auth_register",
+          "component": () => import('../src/pages/auth/register.svelte').then(m => m.default)
+        }
+      ],
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": false,
+      "isPage": false,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/auth"
+    },
+    {
+      "isFile": false,
+      "isDir": true,
+      "file": "booking",
+      "filepath": "/booking",
+      "name": "booking",
+      "ext": "",
+      "badExt": false,
+      "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/booking",
+      "children": [
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "book.svelte",
+          "filepath": "/booking/book.svelte",
+          "name": "book",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/booking/book.svelte",
+          "importPath": "../src/pages/booking/book.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/booking/book",
+          "id": "_booking_book",
+          "component": () => import('../src/pages/booking/book.svelte').then(m => m.default)
+        }
+      ],
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": false,
+      "isPage": false,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/booking"
+    },
+    {
+      "isFile": false,
+      "isDir": true,
+      "file": "check",
+      "filepath": "/check",
+      "name": "check",
+      "ext": "",
+      "badExt": false,
+      "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/check",
+      "children": [
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "sheet.svelte",
+          "filepath": "/check/sheet.svelte",
+          "name": "sheet",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/check/sheet.svelte",
+          "importPath": "../src/pages/check/sheet.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/check/sheet",
+          "id": "_check_sheet",
+          "component": () => import('../src/pages/check/sheet.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "trip.svelte",
+          "filepath": "/check/trip.svelte",
+          "name": "trip",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/Users/koa/Downloads/preprocess-auto-ts/src/pages/check/trip.svelte",
+          "importPath": "../src/pages/check/trip.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/check/trip",
+          "id": "_check_trip",
+          "component": () => import('../src/pages/check/trip.svelte').then(m => m.default)
+        }
+      ],
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": false,
+      "isPage": false,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/check"
+    },
     {
       "isFile": true,
       "isDir": false,
@@ -50,16 +272,24 @@ export const _tree = {
       "component": () => import('../src/pages/index.svelte').then(m => m.default)
     }
   ],
-  "isLayout": false,
+  "isLayout": true,
   "isReset": false,
   "isIndex": false,
   "isFallback": false,
+  "isPage": false,
+  "isFile": true,
+  "file": "_layout.svelte",
+  "ext": "svelte",
+  "badExt": false,
+  "importPath": "../src/pages/_layout.svelte",
   "meta": {
     "recursive": true,
     "preload": false,
     "prerender": true
   },
-  "path": "/"
+  "path": "/",
+  "id": "__layout",
+  "component": () => import('../src/pages/_layout.svelte').then(m => m.default)
 }
 
 

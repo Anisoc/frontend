@@ -1,3 +1,8 @@
 [
+  "/auth/login",
+  "/auth/register",
+  "/booking/book",
+  "/check/sheet",
+  "/check/trip",
   "/index"
 ]
