@@ -7,6 +7,7 @@
     BookIcon as Book,
     UserIcon as AboutUs,
     FeatherIcon as ContactUs,
+    HomeIcon as Home,
   } from "svelte-feather-icons";
 
   import { fly } from "svelte/transition";
@@ -18,6 +19,19 @@
 <div class="box" transition:fly={{ x: -200, duration: 300 }}>
   <div class="container">
     <div class="tabs">
+      <div class="tab">
+        <Tab
+          bind:group={value}
+          on:change
+          value="Home"
+          on:click={() => $goto("/")}
+        >
+          <div class="content">
+            <Home {size} />
+            <div class="text">Home</div>
+          </div>
+        </Tab>
+      </div>
       <div class="tab">
         <Tab
           bind:group={value}
@@ -142,7 +156,7 @@
 
     .content {
       display: flex;
-      width: calc(60px + 7vw);
+      width: calc(60px + 5.9vw);
     }
   }
 </style>

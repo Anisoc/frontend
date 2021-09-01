@@ -49,9 +49,10 @@
   }
 
   img {
-    max-width: calc(50px + 6vw);
-    margin-top: 0.5vh;
-    margin-right: 1vw;
+    max-width: calc(50px + 4vw);
+    margin-top: calc(2px + 0.3vh);
+    padding: 0.7rem;
+    padding-top: 0;
   }
   @media (min-width: 1000px) {
     .bar {
