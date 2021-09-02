@@ -20,6 +20,7 @@ export default defineConfig(({ command, mode }) => {
         "@routes": path.resolve("/.routify/routes.js"),
         "@stores": path.resolve("/src/logic/stores.js"),
         "@logic/*": path.resolve("/src/logic/*"),
+        "@components/*": path.resolve("/src/components/*"),
       },
     },
   };

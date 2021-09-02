@@ -16,7 +16,8 @@
     "paths": {
       "@routes": ["/.routify/routes.js"],
       "@stores": ["/src/logic/stores.js"],
-      "@logic/*": ["/src/logic/*"]
+      "@logic/*": ["/src/logic/*"],
+      "@components/*": ["/src/components/*"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
