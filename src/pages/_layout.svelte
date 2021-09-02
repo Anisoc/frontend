@@ -5,20 +5,18 @@
   import { sideBar } from "../logic/stores";
 
   const hideSideBar = async () => {
-    sideBar.update((val) => 0);
+    if ($sideBar) sideBar.update((val) => 0);
   };
 </script>
 
-<Header />
-<div class="desktop"><Sidebar /></div>
-<div
-  class="mobile"
-  use:clickOutside
-  on:click_outside={hideSideBar}
-  on:click={hideSideBar}
->
+<div class="desktop">
+  <Header />
+  <Sidebar />
+</div>
+<div class="mobile" use:clickOutside on:click_outside={hideSideBar}>
+  <Header />
   {#if $sideBar}
-    <Sidebar />
+    <Sidebar on:click={hideSideBar} />
   {/if}
 </div>
 <div class="page x-grid">
