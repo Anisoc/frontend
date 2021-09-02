@@ -4,7 +4,6 @@
     TwitterIcon as Twitter,
     TvIcon as Events,
     UsersIcon as Meetup,
-    MicIcon as Karaoke,
   } from "svelte-feather-icons";
 
   import { Button, Card, Headline, Subhead } from "attractions";
