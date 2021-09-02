@@ -1,7 +1,8 @@
 <script>
-  import { goto } from "@roxi/routify";
+  import { goto, url } from "@roxi/routify";
 
   import { Tab } from "attractions";
+
   import {
     CalendarIcon as Events,
     BookIcon as Book,
@@ -12,7 +13,7 @@
 
   import { fly } from "svelte/transition";
 
-  let value = null;
+  let value = window.location.pathname;
   let size = "24";
 </script>
 
@@ -20,12 +21,7 @@
   <div class="container">
     <div class="tabs">
       <div class="tab">
-        <Tab
-          bind:group={value}
-          on:change
-          value="Home"
-          on:click={() => $goto("/")}
-        >
+        <Tab bind:group={value} on:change value="/" on:click={() => $goto("/")}>
           <div class="content">
             <Home {size} />
             <div class="text">Home</div>
@@ -36,7 +32,7 @@
         <Tab
           bind:group={value}
           on:change
-          value="Posts"
+          value="/posts"
           on:click={() => $goto("/posts")}
         >
           <div class="content">
@@ -49,7 +45,7 @@
         <Tab
           bind:group={value}
           on:change
-          value="Events"
+          value="/events"
           on:click={() => $goto("/events")}
         >
           <div class="content">
@@ -62,7 +58,7 @@
         <Tab
           bind:group={value}
           on:change
-          value="AboutUs"
+          value="/about-us"
           on:click={() => $goto("/about-us")}
         >
           <div class="content">
@@ -75,7 +71,7 @@
         <Tab
           bind:group={value}
           on:change
-          value="ContactUs"
+          value="/contact-us"
           on:click={() => $goto("/contact-us")}
         >
           <div class="content">
