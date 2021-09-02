@@ -21,6 +21,7 @@ export default defineConfig(({ command, mode }) => {
         "@stores": path.resolve("/src/logic/stores.js"),
         "@logic/*": path.resolve("/src/logic/*"),
         "@components/*": path.resolve("/src/components/*"),
+        "@events/*": path.resolve("/src/events/*"),
       },
     },
   };

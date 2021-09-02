@@ -1,7 +1,7 @@
 <script>
-  import Header from "../components/layout/Header.svelte";
-  import Sidebar from "../components/layout/Sidebar.svelte";
-
+  import Header from "@components/layout/Header.svelte";
+  import Sidebar from "@components/layout/Sidebar.svelte";
+  import { clickOutside } from "../events/clickOutside.svelte";
   import { sideBar } from "../logic/stores";
 
   const hideSideBar = async () => {
@@ -11,12 +11,17 @@
 
 <Header />
 <div class="desktop"><Sidebar /></div>
-<div class="mobile" on:click={hideSideBar}>
+<div
+  class="mobile"
+  use:clickOutside
+  on:click_outside={hideSideBar}
+  on:click={hideSideBar}
+>
   {#if $sideBar}
     <Sidebar />
   {/if}
 </div>
-<div class="page x-grid" on:click={hideSideBar}>
+<div class="page x-grid">
   <slot />
 </div>
 

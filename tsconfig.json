@@ -17,7 +17,9 @@
       "@routes": ["/.routify/routes.js"],
       "@stores": ["/src/logic/stores.js"],
       "@logic/*": ["/src/logic/*"],
-      "@components/*": ["/src/components/*"]
+      "@components/*": ["/src/components/*"],
+      "@events/*": ["/src/events/*"],
+      "*": ["*", "./types/*"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
