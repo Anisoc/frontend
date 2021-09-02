@@ -19,7 +19,7 @@
 
 <div class="box" transition:fly={{ x: -200, duration: 300 }}>
   <div class="container">
-    <div class="tabs">
+    <div class="tabs" on:click>
       <div class="tab">
         <Tab bind:group={value} on:change value="/" on:click={() => $goto("/")}>
           <div class="content">
