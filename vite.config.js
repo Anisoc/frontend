@@ -6,7 +6,12 @@ import path from "path";
 export default defineConfig(({ command, mode }) => {
   const isProduction = mode === "production";
   return {
-    plugins: [svelte(), tsconfigPaths()],
+    plugins: [
+      svelte({
+        disableDependencyReinclusion: ["@roxi/routify"],
+      }),
+      tsconfigPaths(),
+    ],
     build: {
       minify: isProduction,
     },
