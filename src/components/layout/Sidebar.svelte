@@ -125,9 +125,8 @@
       position: fixed;
       top: 0vh;
       left: 0px;
-      height: 10vh;
+      height: 8.5vh;
       width: 100vw;
-      background-color: transparent;
       border-left: 1px ridge var(--border);
       display: flex;
       justify-content: center;
