@@ -12,8 +12,14 @@
   } from "svelte-feather-icons";
 
   import { fly } from "svelte/transition";
+  export let value = window.location.pathname;
 
-  let value = window.location.pathname;
+  $: {
+    if (window.location.pathname) {
+      value = window.location.pathname;
+    }
+  }
+
   let size = "24";
 </script>
 
@@ -21,7 +27,7 @@
   <div class="container">
     <div class="tabs" on:click>
       <div class="tab">
-        <Tab bind:group={value} on:change value="/" on:click={() => $goto("/")}>
+        <Tab bind:group={value} value="/" on:click={() => $goto("/")}>
           <div class="content">
             <Home {size} />
             <div class="text">Home</div>
@@ -29,12 +35,7 @@
         </Tab>
       </div>
       <div class="tab">
-        <Tab
-          bind:group={value}
-          on:change
-          value="/posts"
-          on:click={() => $goto("/posts")}
-        >
+        <Tab bind:group={value} value="/posts" on:click={() => $goto("/posts")}>
           <div class="content">
             <Book {size} />
             <div class="text">Posts</div>
@@ -44,7 +45,6 @@
       <div class="tab">
         <Tab
           bind:group={value}
-          on:change
           value="/events"
           on:click={() => $goto("/events")}
         >
@@ -57,7 +57,6 @@
       <div class="tab">
         <Tab
           bind:group={value}
-          on:change
           value="/about-us"
           on:click={() => $goto("/about-us")}
         >
@@ -70,7 +69,6 @@
       <div class="tab">
         <Tab
           bind:group={value}
-          on:change
           value="/contact-us"
           on:click={() => $goto("/contact-us")}
         >
@@ -125,9 +123,8 @@
       position: fixed;
       top: 0vh;
       left: 0px;
-      height: 10vh;
+      height: calc(45px + 3vh);
       width: 100vw;
-      background-color: transparent;
       border-left: 1px ridge var(--border);
       display: flex;
       justify-content: center;

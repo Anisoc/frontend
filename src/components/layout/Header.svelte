@@ -13,9 +13,7 @@
 </script>
 
 <div class="logo">
-  <label for="logo" on:click={() => $goto("/")}>
-    <img src="assets/logo2.png" alt="Logo" /></label
-  >
+  <label for="logo"> <img src="assets/logo2.png" alt="Logo" /></label>
 </div>
 
 <div class="bar">
